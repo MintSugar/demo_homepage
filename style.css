@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: sans-serif;
+	font-size: 14px;
+	background-color: #f6f6f6;
+}
+
+body {
+	padding-top: 120px;
+}
+
+.row {
+	position: relative;
+	width: 1020px;
+	padding: 0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.95);
+	height: 120px;
+	padding-top: 25px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.35);
+
+
+}
+
+header .logo {
+	float: left;
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: black;
+	border-radius: 70px;
+
+}
+
+header ul {
+	float: right;
+	list-style: none;
+	padding-top: 60px;
+
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #c0c0c0;
+	margin-left: 40px;
+}
+
+header ul li a:hover {
+	color: black;
+}
+
+.teaser {
+	height: 440px;
+	background-image: url(http://lorempixel.com/1020/600);
+	background-size: cover;
+	padding-top: 130px;
+}
+
+.teaser h1, .teaser h2{
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+}
+
+
+.teaser h1 {
+	font-size: 48px;
+	font-weight: 500;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.teaser h2 {
+	font-size: 26px;
+	font-weight: 300;
+	color: white;
+}
+
+
+.features {
+
+}
+
+.features article {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding: 40px 20px 20px 20px;
+
+}
+
+.features article img {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.features article p {
+
+}
+
+
+
+
+
+
+
+
+
+
+
