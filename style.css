@@ -115,6 +115,60 @@ header ul li a:hover {
 
 }
 
+footer{
+	background-color: black;
+	padding: 20px 0;
+	text-align: center;
+
+}
+
+
+footer .logo {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background-color: gray;
+	margin-bottom: 20px;
+
+
+
+}
+
+
+footer ul {
+
+}
+ 
+footer ul li {
+
+	display: inline-block;
+	width: 140px;
+
+}
+
+
+
+footer ul li a {
+
+	display: inline-block;
+	color: #f6f6f6;
+	text-decoration: none;
+	padding: 10px;
+
+
+}
+
+footer ul li a:hover {
+
+	color: white;
+	border-radius: 14px;
+	background-color: deeppink;
+}
+
+
+
+
 
 
 
