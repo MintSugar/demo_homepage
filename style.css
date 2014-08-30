@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-	padding-top: 120px;
+	padding-top: 140px;
 }
 
 .row {
@@ -29,11 +29,18 @@ header {
 	width: 100%;
 	z-index: 1;
 	background-color: rgba(255,255,255,0.95);
-	height: 120px;
+	height: 140px;
 	padding-top: 25px;
 	box-shadow: 0 0 4px rgba(0,0,0,0.35);
+	transition: all 0.3s;
 
 
+}
+
+
+html.scrolled header {
+	height: 80px;
+	padding-top: 10px;
 }
 
 header .logo {
@@ -43,13 +50,24 @@ header .logo {
 	height: 70px;
 	background-color: black;
 	border-radius: 70px;
+	transition: all 0.3s;
 
 }
 
+html.scrolled header .logo {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+
+
+}
+
+
 header ul {
-	float: right;
 	list-style: none;
-	padding-top: 60px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 
 }
 
@@ -101,17 +119,48 @@ header ul li a:hover {
 .features article {
 	width: 33.33%;
 	float: left;
-	text-align: center;
+	text-align: left;
 	padding: 40px 20px 20px 20px;
+	position: relative;
 
 }
+
+.features article.on {
+	cursor: pointer;
+}
+
+.features article h3 {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	margin-top: -15px;
+	width: 100%;
+	opacity: 0;
+	margin-left: -10px;
+	transition: opacity 0.3s;
+	z-index: 1;
+}
+
+.features article.on h3 {
+	opacity: 1;
+
+
+}
+
 
 .features article img {
 	display: inline-block;
 	margin-bottom: 20px;
+	transition: opacity 0.3s;
 }
 
+.features article.on img{
+	opacity: 0.5;
+}
+
+
 .features article p {
+
 
 }
 
@@ -125,11 +174,11 @@ footer{
 
 footer .logo {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
-	border-radius: 25px;
+	width: 34px;
+	height: 34px;
+	border-radius: 34px;
 	background-color: gray;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 
 
 
